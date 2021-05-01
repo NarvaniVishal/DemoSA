@@ -1,0 +1,76 @@
+.section-title1 {
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.section-title1 i {
+	display: block;
+	color: #000000;
+	font-size: 65px;
+}
+
+.section-title1 h2 {
+	font-size: 48px;
+	position: relative;
+	display: inline-block;
+	padding: 0px;
+}
+
+.section-title1 h2:after,
+.section-title1 h2:before {
+	position: absolute;
+	content: "";
+	width: 277px;
+	height: 1px;
+	background: #A9A9A9;
+	top: 32px;
+}
+
+.section-title1 h2:before {
+	left: 100%;
+}
+
+.section-title1 h2:after {
+	right: 100%;
+}
+
+.section-title1.text-white i {
+	color: #A9A9A9;
+}
+
+.section-title1.st-no-style h2:after,
+.section-title1.st-no-style h2:before {
+	display: none;
+}
+
+.set-bg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+
+.spad {
+	padding-top: 110px;
+	padding-bottom: 115px;
+}
+
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5,
+.text-white h6,
+.text-white p,
+.text-white span,
+.text-white li,
+.text-white a {
+	color: #fff;
+}
+
+.rating i {
+	color: #A9A9A9;
+}
+
+.rating .is-fade {
+	color: #e0e3e4;
+}

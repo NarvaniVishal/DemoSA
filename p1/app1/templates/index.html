@@ -1,0 +1,21 @@
+
+<html>
+<head>
+	
+</head>
+	<body>
+		<h1>home page</h1>
+		{{data}}
+
+		<form method="GET">
+			<select name="course_id">
+				{% for entry in data %}
+    					<option value="{{ entry.id }}">{{ entry.name }}</option>
+				{% endfor %}
+			</select>
+
+			<input type="submit" value="save">
+		</form>
+
+	</body>
+</html>

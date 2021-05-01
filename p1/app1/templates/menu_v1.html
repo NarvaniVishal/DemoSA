@@ -1,0 +1,65 @@
+	{%load static%}
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		
+		<!-- Author Meta -->
+		<meta name="author" content="Demo">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Sizzling Pizza</title>
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" type="text/css" href="{%static 'my.css'%}">
+			<link rel="stylesheet" type="text/css" href="{%static 'css/linearicons.css'%}">
+			<link rel="stylesheet" type="text/css" href="{%static 'css/font-awesome.min.css'%}">
+			<link rel="stylesheet" type="text/css" href="{%static 'css/bootstrap.css'%}">
+			<link rel="stylesheet" type="text/css" href="{%static 'css/magnific-popup.css'%}">
+			<link rel="stylesheet" type="text/css" href="{%static 'css/jquery-ui.css'%}">
+			<link rel="stylesheet" type="text/css" href="{%static 'css/nice-select.css'%}">		
+			<link rel="stylesheet" type="text/css" href="{%static 'css/flaticon.css'%}"/>
+			<link rel="stylesheet" type="text/css" href="{%static 'css/animate.min.css'%}">
+			<link rel="stylesheet" type="text/css" href="{%static 'css/owl.carousel.css'%}">
+			<link rel="stylesheet" type="text/css" href="{%static 'css/main.css'%}">
+			<link rel="stylesheet" type="text/css" href="{%static 'css/extra.css'%}">
+		</head>
+		<body style="background-color:grey">	
+			<!-- start banner Area -->
+			<section class="about-banner relative">
+				<!-- <div class="overlay overlay-bg"></div> -->
+				<div class="container">				
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="container">
+							<br>
+							<br>
+							<br>
+							<center><h1 class="text-white">
+								There is no sincere love than the love of food.
+							</h1>
+								<p class="text-white">Great food cooked with all safety measures</p>	
+
+								<table border=1 class="text-white">
+									{%for singleStu in data%}
+									<tr>
+										<td>{{singleStu.name}}<td>
+											<td>{{singleStu.no}}<td>
+									</tr>
+									{%endfor%}
+								</table>
+								
+							</center>
+						</div>	
+					</div>
+				</div>
+			</section>
+		</body>
+	</html>

@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>Registration Form</title>
+		<script language="JavaScript">
+		var fname;
+		function checkValidation()
+		{
+			fname=document.details.fname.value;
+			if(fname=="")
+			{
+				alert("Please enter first name");
+				document.details.fname.focus();
+				return false;
+			}
+			else
+			{
+				data = document.details.email.value;
+				i = data.indexOf('@');
+				j = data.indexOf('.');
+				diff = parseInt(j) - parseInt(i);
+				k = parseInt(j)+1
+				c = data.charAt(k);
+				if(i<1 || diff<=1 || c=='')
+				{	
+					alert("Invalid email address");
+					document.details.email.focus();
+					return false;
+				}
+			}
+				
+			return true;
+		}
+		 
+
+		</script>
+	</head>
+<body>
+<form name="details" action="/loginAction/" onsubmit="return checkValidation()">
+	FirstName: <input type="text" name="fname"><br><br>
+	Email:<input type="text" name="email"><br><br>
+	
+    <input type="submit" name="Submit" value="Submit"><br><br>
+    <input type="reset" name="clear" value="Clear">
+</form>
+</body>
+</html>
